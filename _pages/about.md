@@ -9,7 +9,7 @@ subtitle: Civil/Structural Engineer. Florida, USA.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>1251 Memorial Drive, McArthur Eng. Bldg</p>
     <p>Coral Gables, FL 33146</p>
