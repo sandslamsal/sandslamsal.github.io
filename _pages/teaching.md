@@ -9,7 +9,7 @@ nav_order: 6
 
 
 
-<span style="font-size: 0.8em;"># **Steel Warehouse Design for Wind Load and Earthquake Load Analysis**</span>
+<span style="font-size: 2em;"># **Steel Warehouse Design for Wind Load and Earthquake Load Analysis**</span>
 
 This tutorial was made in 2019 and is in the Nepali language. It was created during a training session for students. The tutorial covers the design of a steel warehouse, with a focus on analyzing the effects of wind and earthquake loads.
 
@@ -18,24 +18,24 @@ In Nepal we use Indian Standard IS-875 for wind load which is the standard in In
 Here are my YouTube tutorials:
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f429LO8c3d4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-zqz75g-xwQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ky6LdLth6w8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n6EWvbh7fhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I21QwXekNP4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gxW-FGULQPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/f429LO8c3d4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/-zqz75g-xwQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/ky6LdLth6w8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/n6EWvbh7fhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/I21QwXekNP4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/gxW-FGULQPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-# Civil 3D Tutorials: Importing Point Data, Creating TIN Surface, Watershed Analysis, Road Alignment, and Profile View Creation
+<span style="font-size: 2em;"># **Civil 3D Tutorials: Importing Point Data, Creating TIN Surface, Watershed Analysis, Road Alignment, and Profile View Creation**</span>
 
 This tutorial was made in 2020 and is in the Nepali language. It was created during a training session for students. The tutorial covers the use of Civil 3D for importing point data, creating TIN surfaces, watershed analysis, road alignment, and profile view creation.
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ByGw-JD2vtA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/z1TaV6sbRxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lX5DQtGMi9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6LQh1tmcK-o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qa2RdMFhQMY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bAI0VkYezsg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aJ1u7BhKLKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/ByGw-JD2vtA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/z1TaV6sbRxc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/lX5DQtGMi9c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/6LQh1tmcK-o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/qa2RdMFhQMY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/bAI0VkYezsg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="336" height="189" src="https://www.youtube.com/embed/aJ1u7BhKLKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
