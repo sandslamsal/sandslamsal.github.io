@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hurricane Sandy Effects on Tottenville, NY: Natural Hazard Mitigation Planning using GIS Mapping
-date: 2022-11-07 16:11:00-0400
-inline: false
+date: 2023-11-07 16:11:00-0400
+inline: true
 related_posts: false
 ---
 
