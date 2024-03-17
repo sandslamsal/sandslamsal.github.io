@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Embarking on a Remarkable Journey: Commencing my Masters in Civil Engineering with a Focus on Structural Engineering! :sparkles: :smile:
+Embarking on a Remarkable Journey: Commencing my Masters in Civil Engineering with a Focus on Structural Engineering at Texas Tech University, Texas, USA ! :sparkles:

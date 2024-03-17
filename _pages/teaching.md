@@ -7,6 +7,20 @@ nav: true
 nav_order: 6
 ---
 
+<span style="font-size: 1.5em;"># **University of Miami**</span>
+
+CAE 313: Structural System II CAE 313, Teaching Assistant, Spring 2024
+CAE 310: Structural Analysis, Teaching Assistant, Fall 2023
+
+<br>
+
+<span style="font-size: 1.5em;"># **Texas Tech University**</span>
+
+CE 2301: Statics: Structural System II CAE 313, Teaching Assistant, Spring 2022
+CE 2101: Construction Materials Laboratory, Teaching Assistant, Spring 2022
+
+<br>
+
 
 
 <span style="font-size: 1.5em;"># **Steel Warehouse Design addressing Wind Load and Earthquake Load**</span>
