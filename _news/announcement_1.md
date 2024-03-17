@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started Ph.D..
+Started a Ph.D. in Civil Engineering, specializing in Structures, under the esteemed guidance of Dr. Landolf Rhode-Barbarigos at the University of Miami, FL, USA. :mortar_board: :construction: :smile:
