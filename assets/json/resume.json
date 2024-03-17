@@ -6,7 +6,7 @@
     "email": "slamsal60@gmail.com",
     "phone": "(806) 224-8060",
     "url": "https://sandeshlamsal.com",
-    "summary": "A Nepal-born structural engineer, from earthquake engineeering to coastal resillience",
+    "summary": "A Nepal-born structural engineer, from earthquake engineeering desing to coastal resillience",
     "location": {
       "address": "1251 Memorial Drive, McArthur Eng. Bldg",
       "postalCode": "FL 33146",
@@ -27,7 +27,7 @@
       "name": "Civil and Architectural Engineering, University of Miami",
       "position": "Ph.D. Candidate and Research Assistant",
       "url": "https://umcaselab.com",
-      "startDate": "2022-08-08",
+      "startDate": "2022",
       "endDate": "Present",
       "summary": "Working in morphological investigation and physical testing of Submerged Structures at the University of Miami Alfred C. Glassell, Jr. Surge-Structure-Atmosphere Interaction (SUSTAIN) Laboratory with Dr. Landolf Rhode Barbarigos and Dr. Brian Haus.",
       "highlights": ["Coastal Resillience", "Submerged Structures", "Physical Testing", "Morphological Investigation"]
@@ -51,7 +51,7 @@
       "url": "https://welcome.miami.edu/",
       "area": "Civil Engineering",
       "studyType": "PhD",
-      "startDate": "2022-08-08",
+      "startDate": "2022",
       "endDate": "Present",
       "score": "3.9/4.0",
       "courses": ["Structural Engineering"]
@@ -177,7 +177,7 @@
   ],
   "references": [
     {
-      "name": "Professor Landon Rhodes Barbarigos",
+      "name": "Professor Landolf Rhode-Barbarigos",
       "icon": "fa-solid fa-laptop",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
