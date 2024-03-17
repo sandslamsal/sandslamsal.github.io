@@ -171,6 +171,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  announcements:
+    output: true
+    permalink: /announcements/:path/
 
 announcements:
   enabled: true
