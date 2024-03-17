@@ -7,23 +7,23 @@ nav: true
 nav_order: 6
 ---
 
-<span style="font-size: 1.5em;"># **University of Miami**</span>
+<span style="font-size: 1.5em;"> **University of Miami**</span>
 
-CAE 313: Structural System II CAE 313, Teaching Assistant, Spring 2024
+CAE 313: Structural System II CAE 313, Teaching Assistant, Spring 2024<br>
 CAE 310: Structural Analysis, Teaching Assistant, Fall 2023
 
 <br>
 
-<span style="font-size: 1.5em;"># **Texas Tech University**</span>
+<span style="font-size: 1.5em;"> **Texas Tech University**</span>
 
-CE 2301: Statics: Structural System II CAE 313, Teaching Assistant, Spring 2022
+CE 2301: Statics: Structural System II CAE 313, Teaching Assistant, Spring 2022<br>
 CE 2101: Construction Materials Laboratory, Teaching Assistant, Spring 2022
 
 <br>
 
 
 
-<span style="font-size: 1.5em;"># **Steel Warehouse Design addressing Wind Load and Earthquake Load**</span>
+<span style="font-size: 1.5em;"> **Steel Warehouse Design addressing Wind Load and Earthquake Load**</span>
 
 This tutorial was made in 2019 and is in the Nepali language. It was created during a training session for students. The tutorial covers the design of a steel warehouse, with a focus on analyzing the effects of wind and earthquake loads.
 
@@ -42,7 +42,7 @@ Here are my YouTube tutorials:
 
 <br>
 
-<span style="font-size: 1.5em;"># **Civil 3D Tutorials: Importing Point Data, Creating TIN Surface, Watershed Analysis, Road Alignment, and Profile View Creation**</span>
+<span style="font-size: 1.5em;"> **Civil 3D Tutorials: Importing Point Data, Creating TIN Surface, Watershed Analysis, Road Alignment, and Profile View Creation**</span>
 
 This tutorial was made in 2020 and is in the English. It was created during a training session for students. The tutorial covers the use of Civil 3D for importing point data, creating TIN surfaces, watershed analysis, road alignment, and profile view creation.
 
