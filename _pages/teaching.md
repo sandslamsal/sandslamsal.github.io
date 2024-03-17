@@ -9,7 +9,7 @@ nav_order: 6
 
 
 
-<span style="font-size: 1.5em;"># **Steel Warehouse Design for Wind Load and Earthquake Load Analysis**</span>
+<span style="font-size: 1.5em;"># **Steel Warehouse Design addressing Wind Load and Earthquake Load**</span>
 
 This tutorial was made in 2019 and is in the Nepali language. It was created during a training session for students. The tutorial covers the design of a steel warehouse, with a focus on analyzing the effects of wind and earthquake loads.
 
