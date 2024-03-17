@@ -2,14 +2,16 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: This page contains a details and tutorial on courses I have taught in the past and present.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-Organize your courses by years, topics, or universities, however you like!
+
+# **Steel Warehouse Design for Wind Load and Earthquake Load Analysis**
+
+This tutorial was made in 2019 and is in the Nepali language. It was created during a training session for students. The tutorial covers the design of a steel warehouse, with a focus on analyzing the effects of wind and earthquake loads. 
 
 Here is my YouTube tutorial on steel building design:
 
