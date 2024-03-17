@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2021-08-16 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Embarking on a Remarkable Journey: Commencing my Masters in Civil Engineering with a Focus on Structural Engineering! :sparkles: :smile:
