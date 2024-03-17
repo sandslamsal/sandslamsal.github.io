@@ -9,7 +9,7 @@ nav_order: 6
 
 
 
-<span style="font-size: 2em;"># **Steel Warehouse Design for Wind Load and Earthquake Load Analysis**</span>
+<span style="font-size: 1.5em;"># **Steel Warehouse Design for Wind Load and Earthquake Load Analysis**</span>
 
 This tutorial was made in 2019 and is in the Nepali language. It was created during a training session for students. The tutorial covers the design of a steel warehouse, with a focus on analyzing the effects of wind and earthquake loads.
 
@@ -26,9 +26,9 @@ Here are my YouTube tutorials:
 <iframe width="336" height="189" src="https://www.youtube.com/embed/gxW-FGULQPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<span style="font-size: 2em;"># **Civil 3D Tutorials: Importing Point Data, Creating TIN Surface, Watershed Analysis, Road Alignment, and Profile View Creation**</span>
+<span style="font-size: 1.5em;"># **Civil 3D Tutorials: Importing Point Data, Creating TIN Surface, Watershed Analysis, Road Alignment, and Profile View Creation**</span>
 
-This tutorial was made in 2020 and is in the Nepali language. It was created during a training session for students. The tutorial covers the use of Civil 3D for importing point data, creating TIN surfaces, watershed analysis, road alignment, and profile view creation.
+This tutorial was made in 2020 and is in the English. It was created during a training session for students. The tutorial covers the use of Civil 3D for importing point data, creating TIN surfaces, watershed analysis, road alignment, and profile view creation.
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
 <iframe width="336" height="189" src="https://www.youtube.com/embed/ByGw-JD2vtA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
