@@ -213,14 +213,14 @@
   ],
   "references": [
     {
-      "Name": "Landolf Rhode-Barbarigos",
+      "name": "Landolf Rhode-Barbarigos",
       "Position": "Graduate Program Director, Associate Professor",
       "Institution": "University of Miami",
       "icon": "fa-solid fa-thumbtack"
       
     },
     {
-      "Name": "Professor Brian Haus",
+      "name": "Professor Brian Haus",
       "Position": "Professor, Director at SUSTAIN Lab",
       "Institution": "University of Miami",
       "icon": "fa-solid fa-thumbtack"
