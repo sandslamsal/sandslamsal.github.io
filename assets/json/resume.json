@@ -94,35 +94,29 @@
       "name": "Machine Learning",
       "date": "2023-12-01",
       "issuer": "Universiy of Miami",
-      "url": "https://example.com",
+      "url": "https://welcome.miami.edu",
       "icon": "fa-solid fa-location-dot"
     },
     {
       "name": "OpenFoam CFD",
       "date": "2024-02-23",
       "issuer": "OpenFoam Ltd. UK",
-      "url": "https://example.com",
+      "url": "https://openfoam.com",
       "icon": "fa-solid fa-tag"
     },
     {
       "name": "Bridge Design Certification",
       "date": "2019-07-01",
       "issuer": "Engineering Helpline Pvt.Ltd",
-      "url": "https://example.com",
+      "url": "https://engineeringhelpline.com.np",
       "icon": "fa-solid fa-envelope"
     },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
+
     {
       "name": "Professional Engineering Certificate",
       "date": "2018-02-01",
       "issuer": "Nepal Engineering Council",
-      "url": "https://example.com",
+      "url": "https://nec.gov.np/",
       "icon": "fa-solid fa-calendar"
     }
   ],
@@ -197,7 +191,6 @@
       ]
     }
 
-
   ],
   "languages": [
     {
@@ -224,18 +217,17 @@
   ],
   "references": [
     {
-      "name": "Landolf Rhode-Barbarigos",
-      "icon": "fa-solid fa-thumbtack",
+      "Name": "Landolf Rhode-Barbarigos",
       "Position": "Graduate Program Director, Associate Professor",
-      "Institution": "University of Miami"
-     
+      "Institution": "University of Miami",
+      "icon": "fa-solid fa-thumbtack"
       
     },
     {
-      "name": "Professor Brian Haus",
-      "icon": "fa-solid fa-thumbtack",
+      "Name": "Professor Brian Haus",
       "Position": "Professor, Director at SUSTAIN Lab",
-      "Institution": "University of Miami"
+      "Institution": "University of Miami",
+      "icon": "fa-solid fa-thumbtack"
     }
   ]
 }
