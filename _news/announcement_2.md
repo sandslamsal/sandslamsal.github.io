@@ -1,33 +1,21 @@
 ---
 layout: post
-title: A long announcement with details
+title: Hurricane Sandy Effects on Tottenville, NY, Natural Hazard Mitigation Planning using GIS Mapping
 date: 2015-11-07 16:11:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+**GIS Day 2023: Hurricane Sandy Effects on Tottenville, NY, Natural Hazard Mitigation Planning using GIS Mapping**
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+Authors: Sandesh Lamsal, Kylee Rux, Abdullah Rahmatullah, Gustavo Aguilar
 
-#### Hipster list
+## Abstract
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+In October 2012, one of the most destructive hurricanes in U.S. history made landfall, referred to as Superstorm Sandy. Tottenville, NY was exposed storm surge levels of 14 feet. Following the hurricane, a national competition was launched for climate change adaptation projects. One of the selected projects was the Staten Island Living Breakwaters Project. GIS mapping was applied to pre-storm and post-storm data to assess the impacts of Hurricane Sandy and to evaluate the benefits of implementing a breakwater structure. GIS maps offered valuable insights. Tottenville’s southeast coast, consisting of high home values and concentrations of buildings, experienced significant damage. Results concerning the socio-economic landscape revealed disparities in median household income. Additional GIS maps depicted the effectiveness of breakwater structures, highlighting the potential of breakwaters for coastal protection and climate resilience. Ultimately, GIS offered visual representations and played an essential role in assessing the effect of Hurricane Sandy.
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+[Link to the Presentation Poster](https://miami.box.com/s/ej5oqnzstk385139dbrye8v4j6yj2fd9)
 
----
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+[Link to the University of Miami page](https://sp.library.miami.edu/subjects/gis#tab-3)
