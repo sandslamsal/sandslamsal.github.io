@@ -25,12 +25,19 @@
   "work": [
     {
       "name": "Civil and Architectural Engineering, University of Miami",
-      "position": "Ph.D. Candidate and Research Assistant",
+      "position": "Ph.D. Candidate, Research/Teaching Assistant",
       "url": "https://umcaselab.com",
       "startDate": "2022",
       "endDate": "Present",
       "summary": "Working in morphological investigation and physical testing of Submerged Structures at the University of Miami Alfred C. Glassell, Jr. Surge-Structure-Atmosphere Interaction (SUSTAIN) Laboratory with Dr. Landolf Rhode Barbarigos and Dr. Brian Haus.",
       "highlights": ["Coastal Resillience", "Submerged Structures", "Physical Testing", "Morphological Investigation"]
+    },
+    {
+      "name": "Texas Tech University",
+      "position": "Graduate Teaching Assistant",
+      "startDate": "2021",
+      "endDate": "2022",
+      "summary": "Teaching Assistant in Undergrad Subjects (Statics, Construction Materials Laboratory)."
     }
   ],
   "volunteer": [
@@ -49,12 +56,28 @@
       "institution": "University of Miami, Florida, USA",
       "location": "Coral Gables, FL",
       "url": "https://welcome.miami.edu/",
-      "area": "Civil Engineering",
+      "area": "Civil Engineering(Structures)",
       "studyType": "PhD",
       "startDate": "2022",
       "endDate": "Present",
       "score": "3.9/4.0",
-      "courses": ["Structural Engineering"]
+      "activities": ["Graduate Student Association Senate for 2024"]
+    },
+    {
+      "institution": "Texas Tech University",
+      "area": "Civil Engineering (Structures)",
+      "studyType": "MS",
+      "startDate": "2021",
+      "endDate": "2022",
+      "activities": ["Member of TTU ASCE Students Society"]
+    },
+    {
+      "institution": "Tribhuvan University",
+      "area": "Civil Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2013",
+      "endDate": "2017",
+      "activities": ["Design of Bridge as a final year project", "Secretary at National College of Civil Engineering Student’s Society"]
     }
   ],
   "awards": [
@@ -141,6 +164,30 @@
     },
 
     {
+      "name": "ABAQUS",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "FEM Analaysis",
+        "Linear Analysis",
+      ]
+    },
+
+    {
+      "name": "Machine Learning",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Supervised Learning", 
+        "Unsupervised Learning",
+        "Reinforcement Learning",
+        "Deep Learning",
+        "TensorFlow",
+        "PyTorch","Python"
+      ]
+    },
+
+    {
       "name": "AutoCAD/Revit",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
@@ -177,24 +224,18 @@
   ],
   "references": [
     {
-      "name": "Professor Landolf Rhode-Barbarigos",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Landolf Rhode-Barbarigos",
+      "icon": "fa-solid fa-thumbtack",
+      "Position": "Graduate Program Director, Associate Professor",
+      "Institution": "University of Miami"
+     
+      
     },
     {
       "name": "Professor Brian Haus",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "SEAHIVE",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "Position": "Professor, Director at SUSTAIN Lab",
+      "Institution": "University of Miami"
     }
   ]
 }
