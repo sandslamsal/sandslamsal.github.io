@@ -156,7 +156,6 @@
         "ASCE 7-16","ACI 318-19"
       ]
     },
-
     {
       "name": "ABAQUS",
       "level": "Master",
@@ -166,7 +165,6 @@
         "Linear Analysis"
       ]
     },
-
     {
       "name": "Machine Learning",
       "level": "Master",
@@ -180,7 +178,6 @@
         "PyTorch","Python"
       ]
     },
-
     {
       "name": "AutoCAD/Revit",
       "level": "Master",
@@ -190,7 +187,6 @@
         "Building Information Modeling"
       ]
     }
-
   ],
   "languages": [
     {
