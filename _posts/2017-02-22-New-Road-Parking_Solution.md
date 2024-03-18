@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revolutionizing Urban Parking A Proposal for a Multi-Story Parking Building in Newroad, Nepal
+title: Revolutionizing Urban Parking, A Proposal for a Multi-Story Parking Building in Newroad, Nepal
 date: 2017-02-22 05:55:00-0400
 description: A comprehensive overview of the innovative parking solution presented at the 16th National Civil Engineering Cum at IOE Pulchowk Campus, designed to address urban congestion and parking challenges in Newroad, Nepal.
 tags: Parking Building, Newroad, Nepal, Civil Engineering, Urban Development
@@ -31,5 +31,4 @@ We were also fortunate to present our proposal to our esteemed ex-prime minister
 Embracing Innovation for Urban Progress
 In conclusion, our proposal for a multi-story parking building in Newroad embodies the spirit of innovation and proactive urban planning. By harnessing civil engineering expertise and collaborative efforts, we aspire to create tangible solutions that enhance the quality of life for residents and visitors alike. Together, let us pave the way for a more sustainable and vibrant urban future.
 
-Stay tuned for updates as we continue our journey towards reshaping urban landscapes and fostering inclusive development in Nepal.
 
