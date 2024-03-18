@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Impact of HELVETAS Swiss Intercooperation on Civil Engineering Education in Nepal
-date: 2017-02-22 05:55:00-0400
+date: 2017-05-16 05:55:00-0400
 description: A reflection on the invaluable support provided by HELVETAS Swiss Intercooperation for our final year thesis in Bachelor of Civil Engineering.
 tags: HELVETAS, Civil Engineering, Nepal, Bridge Design
 categories: projects
