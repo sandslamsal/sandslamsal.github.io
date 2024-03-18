@@ -7,7 +7,7 @@ tags: HELVETAS, Civil Engineering, Nepal, Bridge Design
 categories: projects
 ---
 
-![Bridge Design](/assets/img/photo.png)
+{% include figure.liquid loading="eager" path="assets/img/helvetas.jpg" class="img-fluid rounded z-depth-1" %}
 
 In the final year of our Bachelor of Civil Engineering program in Nepal, we were fortunate to receive the support of HELVETAS Swiss Intercooperation. This organization, dedicated to the development and implementation of projects that change the lives of people in developing countries, provided us with the necessary resources to complete our thesis project.
 
