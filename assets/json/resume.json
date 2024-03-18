@@ -214,17 +214,15 @@
     "references": [
       {
         "name": "Dr. Brian Haus",
-        "title": "Professor & Department Chair of Ocean Sciences, University of Miami",
-        "note": "Dr. Haus is a Professor and Chair of the Department of Ocean Sciences at the University of Miami Rosenstiel School of Marine and Atmospheric Science. His research focuses on experimental studies of air-sea interactions, ocean surface currents, radar remote sensing of oceanographic processes, shelf and estuary dynamics and wave-current interactions. Key to these efforts are laboratory studies of air-sea interactions and turbulence in the SUSTAIN facility. He is also my co-advisor.",
         "icon": "fa-solid fa-thumbtack",
-        "reference": "https://sustain.earth.miami.edu/people/brian-haus/index.html"
+        "title": "Professor & Department Chair of Ocean Sciences, University of Miami",
+        "url": "https://sustain.earth.miami.edu/people/brian-haus/index.html"
       },
       {
-        "name": "Landolf Rhode-Barbarigos",
-        "title": "Assistant Professor, Department of Civil, Architectural and Environmental Engineering, University of Miami",
-        "note": "Landolf Rhode-Barbarigos is an Assistant Professor in the Department of Civil, Architectural and Environmental Engineering at the University of Miami’s College of Engineering. He is an expert in structural morphology, which investigates the relationship between structures, as well as their form, function, material and forces. He focuses on lightweight structures, such as tensegrity systems, as well as coastal applications, including ecofriendly solutions for shoreline protection. He is my advisor.",
+        "name": "Dr. Landolf Rhode-Barbarigos",
         "icon": "fa-solid fa-thumbtack",
-        "reference": "https://people.miami.edu/profile/fd82d399a0cf413f7d86bdb483184796"
+        "title": "Associate Professor, Department of Civil, Architectural and Environmental Engineering, University of Miami",
+        "url": "https://people.miami.edu/profile/fd82d399a0cf413f7d86bdb483184796"
       }
     ]
   }
