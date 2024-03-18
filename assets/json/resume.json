@@ -215,13 +215,13 @@
       {
         "name": "Dr. Brian Haus",
         "icon": "fa-solid fa-thumbtack",
-        "title": "Professor & Department Chair of Ocean Sciences, University of Miami",
+        "reference": "Professor & Department Chair of Ocean Sciences, University of Miami",
         "url": "https://sustain.earth.miami.edu/people/brian-haus/index.html"
       },
       {
         "name": "Dr. Landolf Rhode-Barbarigos",
         "icon": "fa-solid fa-thumbtack",
-        "title": "Associate Professor, Department of Civil, Architectural and Environmental Engineering, University of Miami",
+        "reference": "Associate Professor, Department of Civil, Architectural and Environmental Engineering, University of Miami",
         "url": "https://people.miami.edu/profile/fd82d399a0cf413f7d86bdb483184796"
       }
     ]
