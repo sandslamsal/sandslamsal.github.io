@@ -16,7 +16,7 @@ CAE 310: Structural Analysis, Teaching Assistant, Fall 2023
 
 <span style="font-size: 1.5em;"> **Texas Tech University**</span>
 
-CE 2301: Statics: Structural System II CAE 313, Teaching Assistant, Spring 2022<br>
+CE 2301: Statics, Teaching Assistant, Spring 2022<br>
 CE 2101: Construction Materials Laboratory, Teaching Assistant, Spring 2022
 
 <br>

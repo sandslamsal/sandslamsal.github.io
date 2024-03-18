@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2021-08-16 07:59:00-0400
+date: 2016-01-15 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-Embarking on a Remarkable Journey: Commencing my Masters in Civil Engineering with a Focus on Structural Engineering at Texas Tech University, Texas, USA ! :sparkles:
+Started a Ph.D. in Civil Engineering, specializing in Structures, under the esteemed guidance of Dr. Landolf Rhode-Barbarigos at the University of Miami, FL, USA. 
