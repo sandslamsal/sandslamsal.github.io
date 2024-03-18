@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Explore the curated list of MATLAB and Python repositories, focusing on the fascinating fields of Structural Analysis and Wave Mechanics. These repositories, sourced from GitHub, serve as a rich resource for researchers, engineers, and enthusiasts alike. 
 nav: true
 nav_order: 4
 ---

@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - sandslamsal
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - sandslamsal/Multi-Story-Building-Vibration-Analysis-in-MATLAB
+  - sandslamsal/Central-Difference-Method-Simulation-Dynamics
+  - sandslamsal/Newmarks-Method-Simulation-Dynamics 
+  - sandslamsal/Wavelength-Calculation-Based-on-Dispersion-Relationship
+  - sandslamsal/Wave-Data-Analysis-using-Zero-Crossing-Method-in-MATLAB 
+
