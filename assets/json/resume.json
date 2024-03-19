@@ -146,47 +146,29 @@
   ],
   "skills": [
     {
-      "name": "CSI SAP2000 and ETABS",
+      "name": "Structural Analysis",
       "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Reinfroced Concrete Building Design",
-        "Steel Building Design",
-        "Earthquake Load Analsysis",
-        "Wind Load Analysis",
-        "ASCE 7-16","ACI 318-19"
-      ]
+      "keywords": ["SAP2000", "ETABS", "Abaqus", "STAAD.Pro"]
     },
     {
-      "name": "ABAQUS",
+      "name": "Programming",
       "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "FEM Analaysis",
-        "Linear Analysis"
-      ]
+      "keywords": ["Python", "C", "Matlab"]
+    },
+    {
+      "name": "CAD",
+      "level": "Master",
+      "keywords": ["AutoCAD", "Revit"]
+    },
+    {
+      "name": "CFD",
+      "level": "Intermediate",
+      "keywords": ["OpenFoam", "Ansys Fluent", "StarCCM"]
     },
     {
       "name": "Machine Learning",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Supervised Learning", 
-        "Unsupervised Learning",
-        "Reinforcement Learning",
-        "Deep Learning",
-        "TensorFlow",
-        "PyTorch","Python"
-      ]
-    },
-    {
-      "name": "AutoCAD/Revit",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Drafting, 2D and 3D",
-        "Building Information Modeling"
-      ]
+      "level": "Intermediate",
+      "keywords": ["TensorFlow", "Keras", "PyTorch"]
     }
   ],
   "languages": [
@@ -201,30 +183,19 @@
       "icon": ""
     }
   ],
-  "interests": [
+  "references": [
     {
-      "name": "CFD",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Volume Element Method",
-        "FEM","FEA"
-        
-      ]
+      "name": "Dr. Brian Haus",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "Professor & Department Chair of Ocean Sciences, University of Miami",
+      "url": "https://sustain.earth.miami.edu/people/brian-haus/index.html"
+    },
+    {
+      "name": "Dr. Landolf Rhode-Barbarigos",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "Associate Professor, Department of Civil, Architectural and Environmental Engineering, University of Miami",
+      "url": "https://people.miami.edu/profile/fd82d399a0cf413f7d86bdb483184796"
     }
-  ],
-    "references": [
-      {
-        "name": "Dr. Brian Haus",
-        "icon": "fa-solid fa-thumbtack",
-        "reference": "Professor & Department Chair of Ocean Sciences, University of Miami",
-        "url": "https://sustain.earth.miami.edu/people/brian-haus/index.html"
-      },
-      {
-        "name": "Dr. Landolf Rhode-Barbarigos",
-        "icon": "fa-solid fa-thumbtack",
-        "reference": "Associate Professor, Department of Civil, Architectural and Environmental Engineering, University of Miami",
-        "url": "https://people.miami.edu/profile/fd82d399a0cf413f7d86bdb483184796"
-      }
-    ]
-  }
-  
+  ]
+}
+
