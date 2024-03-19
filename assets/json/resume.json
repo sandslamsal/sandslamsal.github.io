@@ -3,7 +3,7 @@
     "name": "Sandesh Lamsal",
     "label": "Structural Engineer",
     "image": "",
-    "email": "slamsal60@gmail.com",
+    "email": "sandeshlamsal@miami.edu",
     "phone": "(806) 224-8060",
     "url": "https://sandeshlamsal.com",
     "summary": "A Nepal-born structural engineer, from designing earthquake resistant building to coastal resillient structures",
@@ -103,7 +103,7 @@
       "date": "2023-12-01",
       "issuer": "Universiy of Miami",
       "url": "https://welcome.miami.edu",
-      "icon": "fa-solid fa-location-dot"
+      "icon": "fa-solid fa-tag"
     },
     {
       "name": "OpenFoam CFD",
@@ -117,7 +117,7 @@
       "date": "2019-07-01",
       "issuer": "Engineering Helpline Pvt.Ltd",
       "url": "https://engineeringhelpline.com.np",
-      "icon": "fa-solid fa-envelope"
+      "icon": "fa-solid fa-tag"
     },
 
     {
@@ -125,7 +125,7 @@
       "date": "2018-02-01",
       "issuer": "Nepal Engineering Council",
       "url": "https://nec.gov.np/",
-      "icon": "fa-solid fa-calendar"
+      "icon": "fa-solid fa-tag"
     }
   ],
   "publications": [
