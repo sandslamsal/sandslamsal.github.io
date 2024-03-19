@@ -6,7 +6,7 @@
     "email": "slamsal60@gmail.com",
     "phone": "(806) 224-8060",
     "url": "https://sandeshlamsal.com",
-    "summary": "A Nepal-born structural engineer, from deisgning earthquake resistant building to coastal resillient structures",
+    "summary": "A Nepal-born structural engineer, from designing earthquake resistant building to coastal resillient structures",
     "location": {
       "address": "1251 Memorial Drive, McArthur Eng. Bldg",
       "postalCode": "FL 33146",
@@ -40,16 +40,17 @@
       "summary": "Teaching Assistant in Undergrad Subjects (Statics, Construction Materials Laboratory)."
     }
   ],
-  "volunteer": [
+  "Involvement": [
     {
-      "organization": "People's Climate March",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
+      "organization": "Civil Engineering Students' Society, National College of Engineering",
+      "position": "Secretary",
+      "url": "https://nce.edu.np/#",
+      "startDate": "2015-04-01",
+      "endDate": "2017-07-01",
+      "summary": "Served as a Secretary from January 2015 to August 2017. Organized AutoCAD Training for Freshmen and Sophomores.",
+      "highlights": [
+        "Organized AutoCAD Training for Freshmen and Sophomores.",
+        "Participated in National Civil Competition with a Parking Solution at New Road, Kathmandu."
   ],
   "education": [
     {
@@ -82,11 +83,16 @@
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Engaged Scholarship Award",
+      "date": "2021-08-12",
+      "awarder": "Texas Tech University, TX, USA",
+      "summary": "Awarded for outstanding engagement in scholarship activities of $1000."
+    },
+    {
+      "title": "Edward E. Whitacre Jr. College of Engineering Merit Based Award",
+      "date": "2021-08-12",
+      "awarder": "Texas Tech University, TX, USA",
+      "summary": "Merit-based award for academic excellence during the 2021-2022 academic year of 1500$."
     }
   ],
   "certificates": [
