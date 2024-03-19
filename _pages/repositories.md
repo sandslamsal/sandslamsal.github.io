@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: Explore the curated list of MATLAB and Python repositories, focusing on the fascinating fields of Structural Analysis and Wave Mechanics. These repositories, sourced from GitHub, serve as a rich resource for researchers, engineers, and enthusiasts alike. 
-nav: true
+nav: false
 nav_order: 4
 ---
 
