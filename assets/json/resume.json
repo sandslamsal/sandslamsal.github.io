@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Sandesh Lamsal",
-    "label": "Structural Engineer",
+    "label": "Ph.D Student",
     "image": "",
     "email": "sandeshlamsal@miami.edu",
     "phone": "(806) 224-8060",
@@ -25,7 +25,7 @@
   "work": [
     {
       "name": "Civil and Architectural Engineering, University of Miami",
-      "position": "Ph.D. Candidate, Research/Teaching Assistant",
+      "position": "Research/Teaching Assistant",
       "url": "https://umcaselab.com",
       "startDate": "2022",
       "endDate": "Present",
@@ -172,8 +172,7 @@
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "FEM Analysis",
-        "Linear Analysis"
+        "FEM Analysis,Linear Analysis"
       ]
     },
     {
@@ -181,13 +180,8 @@
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Supervised Learning",
-        "Unsupervised Learning",
-        "Reinforcement Learning",
-        "Deep Learning",
-        "TensorFlow",
-        "PyTorch",
-        "Python"
+        "Supervised Learning,Unsupervised Learning", "Reinforcement Learning, Deep Learning, TensorFlow,PyTorch",
+        "Regression, Classification, Clustering, Neural Networks"
       ]
     },
     {
@@ -214,12 +208,10 @@
   ],
   "interests": [
     {
-      "name": "CFD",
+      "name": "CFD and Numerical Modelling",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Volume Element Method",
-        "FEM",
-        "FEA"
+        "Volume Element Method, FEM, FEA"
       ]
     }
   ],
