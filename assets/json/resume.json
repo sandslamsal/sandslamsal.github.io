@@ -146,29 +146,32 @@
   ],
   "skills": [
     {
-      "name": "Structural Analysis",
+      "name": "CSI SAP2000 and ETABS",
       "level": "Master",
-      "keywords": ["SAP2000", "ETABS", "Abaqus", "STAAD.Pro"]
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Reinfroced Concrete Building Design","Steel Building Design","Earthquake Load Analsysis","Wind Load Analysis","ASCE 7-16", "ACI 318-19"]
     },
     {
-      "name": "Programming",
+      "name": "ABAQUS",
       "level": "Master",
-      "keywords": ["Python", "C", "Matlab"]
-    },
-    {
-      "name": "CAD",
-      "level": "Master",
-      "keywords": ["AutoCAD", "Revit"]
-    },
-    {
-      "name": "CFD",
-      "level": "Intermediate",
-      "keywords": ["OpenFoam", "Ansys Fluent", "StarCCM"]
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "FEM Analaysis",
+        "Linear Analysis"
+      ]
     },
     {
       "name": "Machine Learning",
-      "level": "Intermediate",
-      "keywords": ["TensorFlow", "Keras", "PyTorch"]
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Supervised Learning","Unsupervised Learning","Reinforcement Learning", "Deep Learning", "TensorFlow", "PyTorch", "Python"]
+    },
+    {
+      "name": "AutoCAD/Revit",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Drafting, 2D and 3D","Building Information Modeling"]
     }
   ],
   "languages": [
@@ -181,6 +184,14 @@
       "language": "English",
       "fluency": "Fluent",
       "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "CFD",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Volume Element Method","FEM","FEA"]
     }
   ],
   "references": [
@@ -198,4 +209,3 @@
     }
   ]
 }
-
