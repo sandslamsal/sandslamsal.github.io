@@ -26,4 +26,4 @@ Additionally, I would like to thank my teammates for their collaboration and har
 In conclusion, the support from HELVETAS Swiss Intercooperation was more than just financial. It was an opportunity for us to apply our theoretical knowledge in a real-world context, understand the socio-economic impact of our work, and contribute to the development of our country. We are grateful for this experience, which has shaped us as engineers and as individuals committed to the progress of Nepal.
 
 {% include figure.liquid loading="eager" path="assets/img/panga.jpg" class="img-fluid rounded z-depth-1" %}
-*Bridge after the Construction Completion (Photo Credit:[Panga,Kritipur](https://www.facebook.com/kirtipur.panga)).*
+*The completed bridge, standing as a testament to successful construction (Photo courtesy of [Panga, Kirtipur](https://www.facebook.com/kirtipur.panga)).*
