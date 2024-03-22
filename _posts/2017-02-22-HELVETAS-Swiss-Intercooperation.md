@@ -8,6 +8,8 @@ categories: projects
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/helvetas.jpg" class="img-fluid rounded z-depth-1" %}
+*Cable Sag Setting for suspended bridge at Panga, Kritipur, Kathmandu.*
+
 
 In the final year of our Bachelor of Civil Engineering program in Nepal, we were fortunate to receive the support of HELVETAS Swiss Intercooperation. This organization, dedicated to the development and implementation of projects that change the lives of people in developing countries, provided us with the necessary resources to complete our thesis project.
 
@@ -22,3 +24,6 @@ I would like to express my deepest gratitude to Er. Lal Jha from Bardibas for fa
 Additionally, I would like to thank my teammates for their collaboration and hard work. This project would not have been possible without their dedication and commitment. We are proud of what we have achieved together and look forward to applying the knowledge and skills we have gained to future projects.
 
 In conclusion, the support from HELVETAS Swiss Intercooperation was more than just financial. It was an opportunity for us to apply our theoretical knowledge in a real-world context, understand the socio-economic impact of our work, and contribute to the development of our country. We are grateful for this experience, which has shaped us as engineers and as individuals committed to the progress of Nepal.
+
+{% include figure.liquid loading="eager" path="assets/img/panga.jpg" class="img-fluid rounded z-depth-1" %}
+*Bridge after the Construction Completion (Photo Credit:[Panga,Kritipur](https://www.facebook.com/kirtipur.panga)).*
