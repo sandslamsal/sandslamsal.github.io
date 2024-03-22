@@ -109,9 +109,10 @@
   ],
   "volunteer": [
     {
-      "organization": "Community Outreach Program",
+      "name": "Community Outreach Program",
+      "position": "Presenter",
       "issuer": "Frost Science Museum, Miami, Florida",
-      "date": "2023",
+      "date": "2023-03-08",
       "summary": "At World Ocean Day 2023, we showcased our research on the significance of Artificial Hybrid Coral Reef Structures in safeguarding coastlines",
       "icon": "fa-solid fa-tag"
     }
