@@ -107,6 +107,14 @@
       "summary": "Merit-based award for academic excellence during the 2021-2022 academic year of 1500$."
     }
   ],
+  "volunteer": [
+    {
+      "organization": "Community Outreach Program",
+      "issuer": "Frost Science Museum, Miami, Florida",
+      "summary": "At World Ocean Day 2023, we showcased our research on the significance of Artificial Hybrid Coral Reef Structures in safeguarding coastlines",
+      "highlights": ["X-REEF","SEAHIVE"]
+    }
+  ],
   "certificates": [
     {
       "name": "Machine Learning",
