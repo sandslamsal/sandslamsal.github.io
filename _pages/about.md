@@ -20,7 +20,7 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Ph.D. student in Civil and Architectural Engineering at the [University of Miami](https://welcome.miami.edu/), Ph.D. Candidate 2025. His academic journey began with a Bachelor's Degree in Civil Engineering from [Tribhuvan University](https://tu.edu.np/), followed by a Master of Science in Civil Engineering from [Texas Tech University](https://www.ttu.edu/). Prior to his enrollment at UMiami, he also honed his skills as a Civil Engineer in Nepal
+Ph.D. student in Civil and Architectural Engineering at the [University of Miami](https://welcome.miami.edu/), Ph.D. Candidate 2025. His academic journey began with a Bachelor's Degree in Civil Engineering from [Tribhuvan University](https://tu.edu.np/), followed by a Master of Science in Civil Engineering from [Texas Tech University](https://www.ttu.edu/). Prior to his enrollment at TTU and UMiami, he also honed his skills as a Civil Engineer in Nepal.
 
 Currently engaged in morphological investigation and physical testing of Submerged Structures at the University of Miami's Alfred C. Glassell, Jr. Surge-Structure-Atmosphere Interaction [(SUSTAIN)](https://sustain.earth.miami.edu/) Laboratory. This exciting research is conducted under the guidance of [Dr. Landolf Rhode-Barbarigos (CASE Lab)](https://people.miami.edu/profile/fd82d399a0cf413f7d86bdb483184796). He is also involved in studying the combination of wind and wave loading effects in building structures and considerations for prevailing building design codes within his team. 
 
