@@ -20,7 +20,7 @@ related_posts: false
 
 Yesterday, I had the privilege of presenting our latest research on "A Sustainable and Efficient Structural Solution for Hybrid Coral Reefs" at the ASCE Earth and Science 2024 conference. This presentation focused on the innovative SEAHIVE® system—a shoreline-protection strategy that combines hexagonal concrete prisms to dissipate wave energy and support marine habitats.
 
-{% include figure.liquid loading="eager" path="assets/img/asce2024.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/asce2024.jpg" class="img-fluid rounded z-depth-1" %}
 *Presenting SEAHIVE® configurations at the conference*
 
 ## Research Highlights
