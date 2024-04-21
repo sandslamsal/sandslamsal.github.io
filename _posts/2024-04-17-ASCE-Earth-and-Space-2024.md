@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Presenting at ASCE Earth and Science 2024: A Look into SEAHIVE Breakwaters"
-description: An in-depth look at the innovative solutions for space exploration and earth science presented at the ASCE Earth and Space 2024 conference.
+description: "Presenting at the ASCE Earth and Science 2024:Insights into Spatial Arrangement of SEAHIVE® Breakwater Structures."
 tags: ASCE, Earth and Space, 2024, Space Exploration, Earth Science
 date: 2024-04-17 08:00:00-0400
 inline: false
