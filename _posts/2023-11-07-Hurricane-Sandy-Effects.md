@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hurricane Sandy Effects on Tottenville, NY, Natural Hazard Mitigation Planning using GIS Mapping
+description: A detailed analysis of the effects and aftermath of Hurricane Sandy, focusing on its impact on urban development and civil engineering practices.
+tags: Hurricane Sandy, 2023, Urban Development, Civil Engineering, Disaster Management
 date: 2023-11-07 16:11:00-0400
 inline: false
 related_posts: false
