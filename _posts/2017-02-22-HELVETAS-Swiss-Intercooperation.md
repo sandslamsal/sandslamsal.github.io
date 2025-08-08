@@ -5,6 +5,7 @@ date: 2017-05-16 05:55:00-0400
 description: A reflection on the invaluable support provided by HELVETAS Swiss Intercooperation for our final year thesis in Bachelor of Civil Engineering.
 tags: HELVETAS, Civil Engineering, Nepal, Bridge Design
 categories: projects
+thumbnail: assets/img/helvetas.jpg
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/helvetas.jpg" class="img-fluid rounded z-depth-1" %}

@@ -16,7 +16,7 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
+    # gem 'mini_racer'  # Temporarily disabled due to compilation issues with Ruby 2.6
     gem 'unicode_utils'
     gem 'webrick'
 end

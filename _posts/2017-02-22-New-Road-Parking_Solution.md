@@ -5,6 +5,7 @@ date: 2017-02-22 05:55:00-0400
 description: A comprehensive overview of the innovative parking solution presented at the 16th National Civil Engineering Cum at IOE Pulchowk Campus, designed to address urban congestion and parking challenges in Newroad, Nepal.
 tags: Parking Building, Newroad, Nepal, Civil Engineering, Urban Development
 categories: projects
+thumbnail: assets/img/parking.jpg
 ---
 {% include figure.liquid loading="eager" path="assets/img/parking.jpg" class="img-fluid rounded z-depth-1" %}
 *Photo of attendees from our college at the unveiling of the proposed parking building.*

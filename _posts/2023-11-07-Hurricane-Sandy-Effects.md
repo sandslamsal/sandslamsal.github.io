@@ -6,6 +6,7 @@ tags: Hurricane Sandy, 2023, Urban Development, Civil Engineering, Disaster Mana
 date: 2023-11-07 16:11:00-0400
 inline: false
 related_posts: false
+thumbnail: assets/img/12.jpg
 ---
 
 **Poster Presentation Competition Showcasing 'Hurricane Sandy Effects on Tottenville, NY: Natural Hazard Mitigation Planning using GIS Mapping' at the Celebratory Event of GIS Day 2023, Organized by the University of Miami**

@@ -6,6 +6,7 @@ tags: ASCE, Earth and Space, 2024, Space Exploration, Earth Science
 date: 2024-04-17 08:00:00-0400
 inline: false
 related_posts: false
+thumbnail: assets/img/asce2024.jpg
 ---
 
 **Presenting at the ASCE Earth and Science 2024: Insights into Spatial Arrangement of SEAHIVE® Breakwaters**
