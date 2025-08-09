@@ -911,6 +911,15 @@ nav_order: 5
 .loading-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* Add collapsible styling */
+.collapsible summary { cursor:pointer; outline:none; display:flex; flex-direction:column; }
+details.collapsible, details.tutorial-series { position:relative; }
+details.collapsible::before, details.tutorial-series::before { content:''; }
+details[open].collapsible summary .toggle-indicator, details[open].tutorial-series summary .toggle-indicator { transform:rotate(90deg); }
+.toggle-indicator { transition:transform .3s ease; display:inline-block; margin-right:8px; }
+details.tutorial-series summary { list-style:none; }
+details.tutorial-series summary::-webkit-details-marker, details.collapsible summary::-webkit-details-marker { display:none; }
 </style>
 
 <div class="post">
@@ -929,12 +938,18 @@ nav_order: 5
   </div>
   
   <!-- Tutorial Hero Section -->
-  <div class="tutorial-hero">
-    <h1>Engineering Tutorials</h1>
-    <p>Comprehensive video tutorials covering civil and structural engineering topics</p>
-    
-    <!-- Tutorial Statistics -->
-    <div class="tutorial-stats">
+  <details class="tutorial-hero collapsible" open>
+    <summary>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span class="toggle-indicator">▶</span>
+        <div>
+          <h1 style="margin:0;">Engineering Tutorials</h1>
+          <p style="margin:4px 0 0;">Comprehensive video tutorials covering civil and structural engineering topics</p>
+        </div>
+      </div>
+    </summary>
+    <!-- Collapsible Content -->
+    <div class="tutorial-stats" style="margin-top:20px;">
       <div class="stat-item">
         <span class="stat-number">2</span>
         <span class="stat-label">Series</span>
@@ -952,35 +967,38 @@ nav_order: 5
         <span class="stat-label">Hours Content</span>
       </div>
     </div>
-  </div>
+  </details>
 
-  <!-- Steel Warehouse Design Tutorial Series -->
-  <div class="tutorial-series steel">
-    <div class="series-header">
-      <div class="series-icon steel">
-        <i class="fa-solid fa-warehouse"></i>
-      </div>
-      <div class="series-info">
-        <h2 class="series-title">Steel Warehouse Design</h2>
-        <p class="series-description">
-          Comprehensive tutorial series covering steel warehouse design with focus on wind and earthquake load analysis
-        </p>
-        <div class="series-badges">
-          <span class="series-badge year">
-            <i class="fa-solid fa-calendar"></i>2019
-          </span>
-          <span class="series-badge language">
-            <i class="fa-solid fa-language"></i>Nepali
-          </span>
-          <span class="series-badge tool">
-            <i class="fa-solid fa-tools"></i>IS-875 Wind
-          </span>
-          <span class="series-badge standard">
-            <i class="fa-solid fa-home"></i>IS-1893 Earthquake
-          </span>
+  <!-- Steel Warehouse Design Tutorial Series (collapsible) -->
+  <details class="tutorial-series steel" open>
+    <summary class="series-header" style="list-style:none; cursor:pointer;">
+      <div style="display:flex; align-items:center; gap:14px; width:100%;">
+        <span class="toggle-indicator">▶</span>
+        <div class="series-icon steel">
+          <i class="fa-solid fa-warehouse"></i>
+        </div>
+        <div class="series-info">
+          <h2 class="series-title" style="margin:0;">Steel Warehouse Design</h2>
+          <p class="series-description" style="margin:4px 0 0;">
+            Comprehensive tutorial series covering steel warehouse design with focus on wind and earthquake load analysis
+          </p>
+          <div class="series-badges">
+            <span class="series-badge year">
+              <i class="fa-solid fa-calendar"></i>2019
+            </span>
+            <span class="series-badge language">
+              <i class="fa-solid fa-language"></i>Nepali
+            </span>
+            <span class="series-badge tool">
+              <i class="fa-solid fa-tools"></i>IS-875 Wind
+            </span>
+            <span class="series-badge standard">
+              <i class="fa-solid fa-home"></i>IS-1893 Earthquake
+            </span>
+          </div>
         </div>
       </div>
-    </div>
+    </summary>
 
     <div class="series-content">
       <div class="series-details">
@@ -1066,40 +1084,46 @@ nav_order: 5
         </div>
       </div>
     </div>
-  </div>
+    <!-- End steel series content and videos -->
+  </details>
 
   <!-- Section Divider -->
   <div class="section-divider">
     <i class="fa-solid fa-graduation-cap"></i>
   </div>
 
-  <!-- Civil 3D Tutorial Series -->
-  <div class="tutorial-series civil3d">
-    <div class="series-header">
-      <div class="series-icon civil3d">
-        <i class="fa-solid fa-drafting-compass"></i>
-      </div>
-      <div class="series-info">
-        <h2 class="series-title">Civil 3D Complete Workflow</h2>
-        <p class="series-description">
-          Comprehensive tutorial series covering the complete Civil 3D workflow from data import to infrastructure design
-        </p>
-        <div class="series-badges">
-          <span class="series-badge year">
-            <i class="fa-solid fa-calendar"></i>2020
-          </span>
-          <span class="series-badge language">
-            <i class="fa-solid fa-language"></i>English
-          </span>
-          <span class="series-badge tool">
-            <i class="fa-solid fa-computer"></i>AutoCAD Civil 3D
-          </span>
-          <span class="series-badge standard">
-            <i class="fa-solid fa-route"></i>Infrastructure
-          </span>
+  <!-- Civil 3D Tutorial Series (collapsible) -->
+  <details class="tutorial-series civil3d" open>
+    <summary class="series-header" style="list-style:none; cursor:pointer;">
+      <div style="display:flex; align-items:center; gap:14px; width:100%;">
+        <span class="toggle-indicator">▶</span>
+        <div class="series-icon civil3d">
+          <i class="fa-solid fa-drafting-compass"></i>
+        </div>
+        <div class="series-info">
+          <h2 class="series-title" style="margin:0;">Civil 3D Complete Workflow</h2>
+          <p class="series-description" style="margin:4px 0 0;">
+            Comprehensive tutorial series covering the complete Civil 3D workflow from data import to infrastructure design
+          </p>
+          <div class="series-badges">
+            <span class="series-badge year">
+              <i class="fa-solid fa-calendar"></i>2020
+            </span>
+            <span class="series-badge language">
+              <i class="fa-solid fa-language"></i>English
+            </span>
+            <span class="series-badge tool">
+              <i class="fa-solid fa-computer"></i>AutoCAD Civil 3D
+            </span>
+            <span class="series-badge standard">
+              <i class="fa-solid fa-route"></i>Infrastructure
+            </span>
+          </div>
         </div>
       </div>
-    </div>    <div class="series-content">
+    </summary>
+
+    <div class="series-content">
       <div class="series-details">
         <p>
           Complete Civil 3D workflow tutorial in English (2020). Covers data import, surface modeling, hydrological analysis, and transportation design.
@@ -1194,5 +1218,6 @@ nav_order: 5
         </div>
       </div>
     </div>
-  </div>
+    <!-- End civil3d series content and videos -->
+  </details>
 </div>
