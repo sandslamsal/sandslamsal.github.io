@@ -88,6 +88,70 @@
   function cDiv(a,b){ const d=b.re*b.re + b.im*b.im; return {re:(a.re*b.re + a.im*b.im)/d, im:(a.im*b.re - a.re*b.im)/d}; }
   function cAbs(a){ return Math.hypot(a.re,a.im); }
 
+  // --- Added robust parsers for pasted datasets (Excel / CSV / tab / space delimited) ---
+  function parseSingleColumnSeries(txt){
+    try {
+      const lines = txt.split(/\r?\n/);
+      const out = [];
+      // Pattern with optional thousand separators and decimal (dot or comma)
+      const numPattern = /[-+]?\d{1,3}(?:[ ,]?\d{3})*(?:[.,]\d+)?(?:[eE][-+]?\d+)?|[-+]?\d+(?:[.,]\d+)?(?:[eE][-+]?\d+)?/;
+      for (const rawLine of lines){
+        let raw = rawLine.trim();
+        if(!raw) continue;
+        // Skip obvious header lines
+        if(/^[a-zA-Z].*/.test(raw) && !numPattern.test(raw)) continue;
+        const m = raw.match(numPattern);
+        if(m){
+          let token = m[0];
+          // Normalize thousand separators & decimal:
+          // If token has both ',' and '.' assume last occurrence is decimal marker; remove other separators
+          const hasComma = token.includes(',');
+          const hasDot = token.includes('.');
+            if(hasComma && hasDot){
+              // Decide decimal: choose last of comma/dot
+              const lastComma = token.lastIndexOf(',');
+              const lastDot = token.lastIndexOf('.');
+              const decIsComma = lastComma > lastDot;
+              if(decIsComma){ token = token.replace(/\./g,''); token = token.replace(',','.'); }
+              else { token = token.replace(/,/g,''); }
+            } else if(hasComma && !hasDot){
+              // Treat comma as decimal (European style) if only one comma, else remove all commas then treat last as decimal
+              if(token.match(/,/g).length===1){ token = token.replace(',','.'); }
+              else { token = token.replace(/,/g,''); }
+            } else if(hasDot && token.match(/\./g).length>1){
+              // Multiple dots: likely thousand separators then decimal. Remove all but last.
+              const parts = token.split('.');
+              const decimal = parts.pop();
+              token = parts.join('') + '.' + decimal;
+            }
+          token = token.replace(/[ ]/g,'');
+          const v = parseFloat(token);
+          if(isFinite(v)) out.push(v);
+        }
+      }
+      debug('Parsed single column (enhanced)', {inputLines:lines.length, parsed:out.length});
+      return out;
+    } catch(e){ error('parseSingleColumnSeries failed', e); return []; }
+  }
+  function parseThreeGaugeMatrix(txt){
+    try {
+      const lines = txt.split(/\r?\n/);
+      const rows = [];
+      const numReGlobal = /[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?/g;
+      for (const raw of lines){
+        if(!raw) continue;
+        const nums = raw.match(numReGlobal);
+        if(nums && nums.length>=3){
+          const triplet = nums.slice(0,3).map(s=>parseFloat(s));
+          if(triplet.every(v=>isFinite(v))) rows.push(triplet);
+        }
+      }
+      debug('Parsed three gauge matrix', {inputLines:lines.length, parsedRows:rows.length});
+      return rows;
+    } catch(e){ error('parseThreeGaugeMatrix failed', e); return []; }
+  }
+  // --- end added parsers ---
+
   // Least squares solve (A^H A)^{-1} A^H y for 3x2 complex matrix A and vector y length 3
   function solveLeastSquares(A, y){
     // A: [{c1,c2}, ... 3 rows]; each c1,c2 complex
@@ -194,11 +258,11 @@
 
   // Wave stats
   window.loadWaveStatsExample=function(showAlert=true){ const waveData=CACHED_EXAMPLE_DATA; const first=waveData.map(r=>parseFloat(r[0])); byId('wave-data').value=first.map(v=>v.toFixed(6)).join('\n'); byId('sampling-frequency').value=REAL_WAVE_DATA.samplingFrequency; if(showAlert) alert('Wave stats example loaded.'); };
-  window.calculateWaveStats=function(){ try { const txt=byId('wave-data').value.trim(); const fs=parseFloat(byId('sampling-frequency').value); if(!txt||!(fs>0)) return alert('Enter data and valid frequency'); const data=txt.split(/[\,\n\r\s]+/).map(x=>parseFloat(x)).filter(x=>!isNaN(x)); if(data.length<10) return alert('Need at least 10 points'); const dt=1/fs; const res=zeroCrossing(data, dt); if(!res.nWaves) return alert('No valid waves found'); currentWaveData=data; currentWaveResults=res; const totalDuration=data.length*dt; const heights=res.waves.map(w=>w.height); const maxH=Math.max(...heights); const minH=Math.min(...heights); const stdH=Math.sqrt(heights.reduce((s,h)=>s+(h-res.Hmean)**2,0)/res.nWaves); byId('hs-value').textContent=res.Hs.toFixed(3); byId('hmean-value').textContent=res.Hmean.toFixed(3); byId('tmean-value').textContent=res.Tmean.toFixed(2); byId('h10-value').textContent=res.H10.toFixed(3); byId('wave-count-value').textContent=res.nWaves; const container=byId('wave-stats-result'); let ext=container.querySelector('.additional-results'); if(!ext){ ext=document.createElement('div'); ext.className='additional-results'; container.appendChild(ext);} ext.innerHTML=`<strong>Extended Statistics:</strong><br>• Maximum Wave Height: ${maxH.toFixed(3)} m<br>• Minimum Wave Height: ${minH.toFixed(3)} m<br>• Standard Deviation: ${stdH.toFixed(3)} m<br>• Significant Period (Ts): ${res.Ts.toFixed(2)} s<br>• Data Duration: ${totalDuration.toFixed(1)} s<br>• Sampling Rate: ${fs} Hz<br>• Data Points: ${data.length}`; container.style.display='block'; byId('wave-stats-plot-controls').style.display='block'; } catch(e){ error('Wave stats failed', e); alert('Error analyzing wave data'); }};
+  window.calculateWaveStats=function(){ try { const txt=byId('wave-data').value.trim(); const fs=parseFloat(byId('sampling-frequency').value); if(!txt||!(fs>0)) return alert('Enter data and valid frequency'); const data=parseSingleColumnSeries(txt); if(!data.length){ alert('No numeric values parsed. Ensure you pasted only one column.'); return; } if(data.length<10) return alert('Need at least 10 points (parsed '+data.length+')'); const dt=1/fs; const res=zeroCrossing(data, dt); if(!res.nWaves) return alert('No valid waves found'); currentWaveData=data; currentWaveResults=res; const totalDuration=data.length*dt; const heights=res.waves.map(w=>w.height); const maxH=Math.max(...heights); const minH=Math.min(...heights); const stdH=Math.sqrt(heights.reduce((s,h)=>s+(h-res.Hmean)**2,0)/res.nWaves); byId('hs-value').textContent=res.Hs.toFixed(3); byId('hmean-value').textContent=res.Hmean.toFixed(3); byId('tmean-value').textContent=res.Tmean.toFixed(2); byId('h10-value').textContent=res.H10.toFixed(3); byId('wave-count-value').textContent=res.nWaves; const container=byId('wave-stats-result'); let ext=container.querySelector('.additional-results'); if(!ext){ ext=document.createElement('div'); ext.className='additional-results'; container.appendChild(ext);} ext.innerHTML=`<strong>Extended Statistics:</strong><br>• Maximum Wave Height: ${maxH.toFixed(3)} m<br>• Minimum Wave Height: ${minH.toFixed(3)} m<br>• Standard Deviation: ${stdH.toFixed(3)} m<br>• Significant Period (Ts): ${res.Ts.toFixed(2)} s<br>• Data Duration: ${totalDuration.toFixed(1)} s<br>• Sampling Rate: ${fs} Hz<br>• Data Points: ${data.length}<br>• Parsing: Excel/CSV compatible (first numeric per row used)`; container.style.display='block'; byId('wave-stats-plot-controls').style.display='block'; } catch(e){ error('Wave stats failed', e); alert('Error analyzing wave data (see console).'); }};
 
   // Reflection
   window.loadReflectionExample=function(showAlert=true){ byId('gauge-positions').value=REAL_WAVE_DATA.gaugeSpacing.join(', '); byId('reflection-depth').value=REAL_WAVE_DATA.depth; byId('time-step').value=(1/REAL_WAVE_DATA.samplingFrequency); const gauge=CACHED_EXAMPLE_DATA; byId('gauge-data').value=gauge.map(r=>r.join(',')).join('\n'); if(showAlert) alert('Reflection example loaded.'); };
-  window.calculateReflection=function(){ try { const pos=byId('gauge-positions').value.split(',').map(x=>parseFloat(x.trim())); const h=parseFloat(byId('reflection-depth').value); const dt=parseFloat(byId('time-step').value); const txt=byId('gauge-data').value.trim(); if(pos.length!==3||pos.some(isNaN)||!(h>0)||!(dt>0)||!txt) return alert('Enter valid inputs'); const lines=txt.split('\n').filter(l=>l.trim()); const data=[]; for (const line of lines){ const vals=line.split(',').map(v=>parseFloat(v.trim())); if(vals.length===3&&!vals.some(isNaN)) data.push(vals); } if(data.length<10) return alert('Need at least 10 rows'); currentReflectionData=data; const eta=[data.map(r=>r[0]), data.map(r=>r[1]), data.map(r=>r[2])]; const res=threeArray(pos, eta, dt, h); byId('hi-value').textContent=res.Hi.toFixed(3); byId('hr-value').textContent=res.Hr.toFixed(3); byId('kr-value').textContent=res.Kr.toFixed(3); byId('freq-count-value').textContent=res.validFrequencies; const container=byId('reflection-result'); let ext=container.querySelector('.additional-results'); if(!ext){ ext=document.createElement('div'); ext.className='additional-results'; container.appendChild(ext);} const kr=res.Kr; let perf= kr<0.3?'Low reflection - Good absorption': kr<0.7?'Moderate reflection - Partial absorption':'High reflection - Strong reflection'; const totalDuration=data.length*dt; const spacing=Math.abs(pos[1]-pos[0]); const energyRefPct=(kr*kr*100).toFixed(1); ext.innerHTML=`<strong>Analysis Details:</strong><br>• Gauge Spacing: ${spacing.toFixed(2)} m<br>• Data Duration: ${totalDuration.toFixed(1)} s<br>• Performance: ${perf}<br>• Energy Reflection: ${energyRefPct}%<br>• Data Points: ${data.length}<br>• Method: 3-gauge LSQ (freq-domain)`; container.style.display='block'; byId('reflection-plot-controls').style.display='block'; debug('Reflection frequencies sample', res.details.slice(0,5)); } catch(e){ error('Reflection failed', e); alert('Error analyzing reflection'); }};
+  window.calculateReflection=function(){ try { const pos=byId('gauge-positions').value.split(',').map(x=>parseFloat(x.trim())); const h=parseFloat(byId('reflection-depth').value); const dt=parseFloat(byId('time-step').value); const txt=byId('gauge-data').value.trim(); if(pos.length!==3||pos.some(isNaN)||!(h>0)||!(dt>0)||!txt) return alert('Enter valid inputs'); const data=parseThreeGaugeMatrix(txt); if(data.length<10) return alert('Need at least 10 rows with 3+ columns'); currentReflectionData=data; const eta=[data.map(r=>r[0]), data.map(r=>r[1]), data.map(r=>r[2])]; const res=threeArray(pos, eta, dt, h); byId('hi-value').textContent=res.Hi.toFixed(3); byId('hr-value').textContent=res.Hr.toFixed(3); byId('kr-value').textContent=res.Kr.toFixed(3); byId('freq-count-value').textContent=res.validFrequencies; const container=byId('reflection-result'); let ext=container.querySelector('.additional-results'); if(!ext){ ext=document.createElement('div'); ext.className='additional-results'; container.appendChild(ext);} const kr=res.Kr; let perf= kr<0.3?'Low reflection - Good absorption': kr<0.7?'Moderate reflection - Partial absorption':'High reflection - Strong reflection'; const totalDuration=data.length*dt; const spacing=Math.abs(pos[1]-pos[0]); const energyRefPct=(kr*kr*100).toFixed(1); ext.innerHTML=`<strong>Analysis Details:</strong><br>• Gauge Spacing: ${spacing.toFixed(2)} m<br>• Data Duration: ${totalDuration.toFixed(1)} s<br>• Performance: ${perf}<br>• Energy Reflection: ${energyRefPct}%<br>• Data Points: ${data.length}<br>• Method: 3-gauge LSQ (freq-domain)<br>• Parsing: Excel/CSV/tab delimited accepted (first 3 numerics per row)`; container.style.display='block'; byId('reflection-plot-controls').style.display='block'; debug('Reflection frequencies sample', res.details.slice(0,5)); } catch(e){ error('Reflection failed', e); alert('Error analyzing reflection'); }};
 
   // Plotting helpers
   function destroyChart(ref){ if(ref){ try { ref.destroy(); } catch(e){ error('Destroy chart failed', e); } } }

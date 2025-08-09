@@ -1,0 +1,118 @@
+// Bio page extracted styles from inline <style id="bio-palette-overrides"> block in _pages/bio.md
+// Purpose: centralize palette + dark mode adjustments, reduce inline HTML, improve maintainability.
+
+:root {
+  --bio-accent: var(--global-theme-color, #0d6efd);
+  --bio-accent-dark: #0a58ca;
+  --bio-accent-light: #e7f1fc;
+  --bio-gold: #c9a227;
+  --bio-course-bg: #f5f6f8; // neutral light background (replaces bluish #e7f1fc)
+}
+
+.bio-page {
+  .timeline-marker.current,
+  .semester-badge,
+  .status-badge,
+  .cert-status,
+  .involvement-period.current,
+  .involvement-period.ongoing,
+  .pub-type,
+  .badge.collaborative,
+  .badge.poster,
+  .badge.year { background: var(--bio-accent) !important; color:#fff !important; }
+  .badge.lead { background: var(--bio-gold) !important; color:#fff !important; }
+  .status-badge.current { background: var(--bio-accent) !important; }
+  .phd .degree-icon { background: var(--bio-accent) !important; color:#fff !important; }
+  .publication-card.featured::before,
+  .teaching-card::before,
+  .degree-card::before { background: var(--bio-accent) !important; }
+  /* Updated: neutralize light (pale) course-item background; fallback to accent-light only in light theme */
+  .course-item { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+  .course-item:hover { background: transparent !important; transform: none !important; }
+  .certification-card::before { background: var(--bio-accent) !important; pointer-events:none; }
+  .cert-verify { color: var(--bio-accent) !important; border-color: var(--bio-accent) !important; }
+  .cert-verify:hover { background: var(--bio-accent) !important; color:#fff !important; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bio-card-bg: #1f2328;
+    --bio-card-bg-alt: #242a30;
+    --bio-border: #30363d;
+    --bio-text: #e6ebef;
+    --bio-text-muted: #b3bbc3;
+  }
+  .bio-page {
+    .teaching-card { background: var(--bio-card-bg) !important; }
+    .timeline-content,
+    .teaching-card,
+    .degree-card,
+    .certification-card,
+    .involvement-card,
+    .publication-card,
+    .publication-item { background: var(--bio-card-bg) !important; border:1px solid var(--bio-border) !important; box-shadow:none !important; }
+    /* Remove previous transparent override; set explicit dark neutral */
+    .course-item { background: transparent !important; border: 0 !important; }
+    .course-item:hover { background: transparent !important; }
+    .involvement-card, .involvement-card * { background: transparent !important; }
+    .involvement-card { background: var(--bio-card-bg) !important; }
+    .timeline-marker { background: var(--bio-card-bg) !important; border-color: var(--bio-accent) !important; box-shadow:none !important; }
+    .timeline-marker.current { background: var(--bio-accent) !important; }
+    .marker-ring { background: var(--bio-card-bg) !important; border-color: var(--bio-accent) !important; box-shadow:none !important; }
+    .education-item.current .marker-ring i { color:#dc3545 !important; }
+    .education-year { background: var(--bio-card-bg) !important; color: var(--bio-accent) !important; border:2px solid var(--bio-accent) !important; box-shadow:none !important; }
+    .degree-card::before { background: var(--bio-accent) !important; }
+    .phd .degree-icon,
+    .masters .degree-icon,
+    .bachelors .degree-icon { background: var(--bio-accent) !important; color:#fff !important; }
+    .status-badge.current,
+    .status-badge.completed,
+    .status-badge.foundation { background: var(--bio-accent) !important; color:#fff !important; }
+    .semester-badge { background: var(--bio-accent) !important; }
+    .cert-year { background:#2c333a !important; color:#fff !important; border:1px solid var(--bio-accent) !important; }
+    .cert-status { background: var(--bio-accent) !important; color:#fff !important; }
+    .pub-year { background:#2c333a !important; color:#fff !important; }
+    .pub-icon { background: var(--bio-accent) !important; }
+    .publication-card.featured { background:#1f2a33 !important; }
+    .publication-card.featured::before { background: var(--bio-accent) !important; }
+    .pub-type { background: var(--bio-accent) !important; }
+    .pub-authors strong,
+    .pub-citation strong { color: var(--bio-accent) !important; }
+    .badge.year { background:#384047 !important; color:#fff !important; }
+    .badge.lead { background: var(--bio-gold) !important; color:#fff !important; }
+    .tag { background:#2c333a !important; color: var(--bio-text-muted) !important; border:1px solid #3a424a !important; }
+    .tag.leadership { background:#3a2f14 !important; color: var(--bio-gold) !important; border-color: var(--bio-gold) !important; }
+    .timeline-title,
+    .timeline-role,
+    .course-title,
+    .degree-title,
+    .involvement-title,
+    .pub-title { color: var(--bio-text) !important; }
+    .timeline-description,
+    .course-details,
+    .university-location,
+    .degree-field,
+    .pub-authors,
+    .pub-citation,
+    .involvement-description,
+    .degree-details p { color: var(--bio-text-muted) !important; }
+    .pub-venue { color: var(--bio-text) !important; }
+    .cert-verify { color: var(--bio-accent) !important; border-color: var(--bio-accent) !important; }
+    .cert-verify:hover { background: var(--bio-accent) !important; color:#fff !important; }
+    /* Strengthen specificity to ensure dark background overrides any inline/light styles */
+    .teaching-card .courses-container .course-item {
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+    }
+    .teaching-card .courses-container .course-item:hover {
+      background: transparent !important;
+    }
+    /* Ensure badge inside course items contrasts appropriately */
+    .teaching-card .courses-container .course-item .semester-badge {
+      background: var(--bio-accent) !important;
+      color: #fff !important;
+      box-shadow: none !important;
+    }
+  }
+}

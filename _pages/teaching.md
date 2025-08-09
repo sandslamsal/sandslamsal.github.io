@@ -938,7 +938,7 @@ details.tutorial-series summary::-webkit-details-marker, details.collapsible sum
   </div>
   
   <!-- Tutorial Hero Section -->
-  <details class="tutorial-hero collapsible" open>
+  <details class="tutorial-hero collapsible">
     <summary>
       <div style="display:flex; align-items:center; gap:12px;">
         <span class="toggle-indicator">▶</span>
@@ -970,7 +970,7 @@ details.tutorial-series summary::-webkit-details-marker, details.collapsible sum
   </details>
 
   <!-- Steel Warehouse Design Tutorial Series (collapsible) -->
-  <details class="tutorial-series steel" open>
+  <details class="tutorial-series steel">
     <summary class="series-header" style="list-style:none; cursor:pointer;">
       <div style="display:flex; align-items:center; gap:14px; width:100%;">
         <span class="toggle-indicator">▶</span>
@@ -1093,7 +1093,7 @@ details.tutorial-series summary::-webkit-details-marker, details.collapsible sum
   </div>
 
   <!-- Civil 3D Tutorial Series (collapsible) -->
-  <details class="tutorial-series civil3d" open>
+  <details class="tutorial-series civil3d">
     <summary class="series-header" style="list-style:none; cursor:pointer;">
       <div style="display:flex; align-items:center; gap:14px; width:100%;">
         <span class="toggle-indicator">▶</span>

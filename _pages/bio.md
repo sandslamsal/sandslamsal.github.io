@@ -7,7 +7,10 @@ nav: true
 nav_order: 2
 ---
 
-<div class="post">
+<!-- Inline palette overrides removed; styles now in _sass/_bio.scss -->
+
+<!-- changed wrapper to include bio-page class -->
+<div class="post bio-page">
   <!-- Professional Experience Section -->
   <div class="container mt-4">
     <h2 class="mb-4">
@@ -438,7 +441,7 @@ nav_order: 2
         background: rgba(var(--global-theme-color-rgb, 0, 123, 255), 0.05);
         padding: 20px;
         border-radius: 15px;
-        border-left: 4px solid var(--global-theme-color, #007bff);
+        border-left: 4px solid var(--bio-accent);
         transition: all 0.3s ease;
       }
       
@@ -687,9 +690,9 @@ nav_order: 2
         text-align: center;
         font-size: 18px;
         font-weight: 700;
-        color: var(--global-theme-color, #007bff);
+        color: var(--bio-accent) !important;
         background: var(--global-bg-color, #fff);
-        border: 2px solid var(--global-theme-color, #007bff);
+        border: 2px solid var(--bio-accent) !important;
         border-radius: 25px;
         padding: 8px 4px;
         box-shadow: 0 4px 12px rgba(0,123,255,0.2);
@@ -708,7 +711,7 @@ nav_order: 2
         height: 60px;
         border-radius: 50%;
         background: var(--global-bg-color, #fff);
-        border: 4px solid var(--global-theme-color, #007bff);
+        border: 4px solid var(--bio-accent);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -724,7 +727,7 @@ nav_order: 2
       
       .marker-ring i {
         font-size: 24px;
-        color: var(--global-theme-color, #007bff);
+        color: var(--bio-accent);
       }
       
       .education-item.current .marker-ring i {
@@ -791,8 +794,8 @@ nav_order: 2
       }
       
       .phd .degree-icon {
-        background: linear-gradient(135deg, #ffd700, #ffed4e);
-        color: #b8860b;
+        background: var(--bio-accent) !important;
+        color: #fff !important;
       }
       
       .masters .degree-icon {
@@ -867,7 +870,7 @@ nav_order: 2
       }
       
       .degree-details i {
-        color: var(--global-theme-color, #007bff);
+        color: var(--bio-accent);
       }
       
       /* Mobile responsiveness */
@@ -938,7 +941,7 @@ nav_order: 2
             <p class="cert-authority">NCEES Professional Engineering Exam</p>
             <div class="cert-details">
               <span class="cert-year">2025</span>
-              <a href="https://account.ncees.org/rn/1731100-1208618-1d3ac24" 
+              <a href="https://account.ncees.org/rn/2266878-1758566-43ce6d6" 
                  target="_blank" 
                  class="cert-verify">
                 <i class="fa-solid fa-external-link-alt me-1"></i>Verify
@@ -1877,7 +1880,7 @@ nav_order: 2
         border-radius: 15px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-      }
+           }
       
       .pub-type.conference {
         background: linear-gradient(135deg, #28a745, #20c997);
