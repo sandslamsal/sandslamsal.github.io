@@ -51,6 +51,20 @@ pagination:
   font-size: 0.75rem;
 }
 
+/* Dark theme fixes for badges and tags */
+html[data-theme="dark"] .badge.bg-light {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #e9ecef !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+html[data-theme="dark"] .badge.bg-light:hover {
+  background-color: var(--global-theme-color) !important;
+  color: white !important;
+  border-color: var(--global-theme-color) !important;
+}
+}
+
 .card-body {
   position: relative;
 }
@@ -229,22 +243,22 @@ pagination:
                 <!-- Tags -->
                 {% if tags != "" or categories != "" %}
                   <div class="mb-2">
-                    <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}" class="badge bg-light text-dark text-decoration-none me-1">
-                      <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
+                    <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}" class="tag-link">
+                      <i class="fa-solid fa-calendar fa-sm"></i>{{ year }}
                     </a>
                     
                     {% if tags != "" %}
                       {% for tag in post.tags limit: 3 %}
-                        <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}" class="badge bg-light text-dark text-decoration-none me-1">
-                          <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+                        <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}" class="tag-link">
+                          <i class="fa-solid fa-hashtag fa-sm"></i>{{ tag }}
                         </a>
                       {% endfor %}
                     {% endif %}
                     
                     {% if categories != "" %}
                       {% for category in post.categories limit: 2 %}
-                        <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}" class="badge bg-light text-dark text-decoration-none me-1">
-                          <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+                        <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}" class="tag-link">
+                          <i class="fa-solid fa-tag fa-sm"></i>{{ category }}
                         </a>
                       {% endfor %}
                     {% endif %}
