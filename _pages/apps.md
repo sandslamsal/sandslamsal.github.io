@@ -313,8 +313,8 @@ nav_order: 6
       </div>
     </a>
 
-    <!-- Pile Cap Design App (Coming Soon) -->
-    <div class="app-card" style="cursor: not-allowed; opacity: 0.7;">
+    <!-- Pile Cap Design App (Activated) -->
+    <a href="/apps/pilecap/" class="app-card">
       <div class="app-icon structural">
         <i class="fa-solid fa-building"></i>
       </div>
@@ -323,15 +323,15 @@ nav_order: 6
         Comprehensive pile cap design tool for foundation analysis. Rigid-assumption load distribution to each pile, reinforcement design, and code compliance checking.
       </p>
       <div class="app-badges">
-        <span class="app-badge coming-soon">Coming Soon</span>
+        <span class="app-badge ready">Beta</span>
         <span class="app-badge python">Python</span>
         <span class="app-badge interactive">Interactive</span>
       </div>
       <div class="app-status">
-        <span class="status-indicator coming-soon"></span>
-        <span>In Development</span>
+        <span class="status-indicator"></span>
+        <span>Available (Beta)</span>
       </div>
-    </div>
+    </a>
 
     <!-- Column Design App (Coming Soon) -->
     <div class="app-card" style="cursor: not-allowed; opacity: 0.7;">
