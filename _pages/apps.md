@@ -329,23 +329,25 @@ nav_order: 6
     </a>
 
     <!-- Pile Cap App (External Link) -->
-        <!-- PileCap App -->
-    <a href="https://sandslamsal.github.io/PileCapApp/" target="_blank" class="app-card">
-      <div class="app-icon foundation">
-        <i class="fa-solid fa-building"></i>
-      </div>
-      <h3 class="app-title">PileCap</h3>
-      <p class="app-description">
-        Comprehensive pile cap design tool for foundation analysis. Rigid-assumption load distribution to each pile, reinforcement design, and code compliance checking.
-      </p>
-      <div class="app-badges">
-        <span class="app-badge ready">Ready</span>
-        <span class="app-badge python">Python</span>
-        <span class="app-badge interactive">Interactive</span>
-      </div>
-      <div class="app-status">
-        <span class="status-indicator"></span>
-        <span>Available (Beta)</span>
+    <!-- PileCap App -->
+    <a href="https://sandslamsal.github.io/PileCapApp/" target="_blank" class="app-card-link">
+      <div class="app-card">
+        <div class="app-icon structural">
+          <i class="fa-solid fa-building"></i>
+        </div>
+        <h3 class="app-title">PileCap</h3>
+        <p class="app-description">
+          Comprehensive pile cap design tool for foundation analysis. Rigid-assumption load distribution to each pile, reinforcement design, and code compliance checking.
+        </p>
+        <div class="app-badges">
+          <span class="app-badge ready">Ready</span>
+          <span class="app-badge python">Python</span>
+          <span class="app-badge interactive">Interactive</span>
+        </div>
+        <div class="app-status">
+          <span class="status-indicator"></span>
+          <span>Available (Beta)</span>
+        </div>
       </div>
     </a>
 
@@ -360,13 +362,13 @@ nav_order: 6
           Advanced column design calculations for reinforced concrete columns. Load analysis, slenderness checks, and capacity design.
         </p>
         <div class="app-badges">
-          <span class="app-badge ready">Ready</span>
+          <span class="app-badge coming-soon">Coming Soon</span>
           <span class="app-badge python">Python</span>
           <span class="app-badge interactive">Interactive</span>
         </div>
         <div class="app-status">
-          <span class="status-indicator"></span>
-          <span>Available</span>
+          <span class="status-indicator coming-soon"></span>
+          <span>Coming Soon</span>
         </div>
       </div>
     </a>
