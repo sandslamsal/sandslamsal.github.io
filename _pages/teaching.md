@@ -1087,10 +1087,6 @@ details.tutorial-series summary::-webkit-details-marker, details.collapsible sum
     <!-- End steel series content and videos -->
   </details>
 
-  <!-- Section Divider -->
-  <div class="section-divider">
-    <i class="fa-solid fa-graduation-cap"></i>
-  </div>
 
   <!-- Civil 3D Tutorial Series (collapsible) -->
   <details class="tutorial-series civil3d">

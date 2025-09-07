@@ -272,8 +272,66 @@
   window.plotWaveHeights=function(){ if(!currentWaveResults||!currentWaveResults.waves.length) return alert('No wave analysis results'); const waves=currentWaveResults.waves; const labels=waves.map((_,i)=>i+1); const heights=waves.map(w=>w.height); const periods=waves.map(w=>w.period); destroyChart(waveChart); const ctx=document.getElementById('wave-plot').getContext('2d'); waveChart=new Chart(ctx,{ type:'bar', data:{ labels, datasets:[{ label:'Wave Height (m)', data:heights, backgroundColor:'rgba(79,172,254,0.7)', borderColor:'#4facfe', borderWidth:2, borderRadius:4, borderSkipped:false }]}, options: barChartOptions('Individual Wave Heights Distribution','Wave Number (#)','Wave Height H (m)', (context)=>{ const i=context.dataIndex; return ['Height: '+heights[i].toFixed(3)+' m','Period: '+periods[i].toFixed(2)+' s']; }) }); byId('wave-chart-title').textContent='Individual Wave Heights'; byId('wave-plot-container').style.display='block'; ensureAxisLabels(waveChart,'Wave Number (#)','Wave Height H (m)'); };
 
   window.plotGaugeData=function(){ if(!currentReflectionData) return alert('No gauge data'); const dt=parseFloat(byId('time-step').value); const time=currentReflectionData.map((_,i)=>(i*dt).toFixed(3)); destroyChart(reflectionChart); const ctx=document.getElementById('reflection-plot').getContext('2d'); const pos=byId('gauge-positions').value.split(',').map(x=>parseFloat(x.trim())); const colors=['#667eea','#f093fb','#4facfe']; const labels=[`Gauge 1 (x=${pos[0]}m)`,`Gauge 2 (x=${pos[1]}m)`,`Gauge 3 (x=${pos[2]}m)`]; const ds=[0,1,2].map(i=>({ label:labels[i], data: currentReflectionData.map(r=>r[i]), borderColor:colors[i], backgroundColor:colors[i]+'15', borderWidth:2, pointRadius:0, tension:0.2, fill:false })); reflectionChart=new Chart(ctx,{ type:'line', data:{ labels:time, datasets:ds }, options: multiLineChartOptions('Three-Gauge Time Series Data','Time t (s)','Wave Elevation η (m)') }); byId('reflection-chart-title').textContent='Three-Gauge Data Comparison'; byId('reflection-plot-container').style.display='block'; ensureAxisLabels(reflectionChart,'Time t (s)','Wave Elevation η (m)'); };
+  window.plotGaugeData=function(){
+    if(!currentReflectionData) return alert('No gauge data');
+    const dt=parseFloat(byId('time-step').value);
+    const time=currentReflectionData.map((_,i)=>(i*dt).toFixed(3));
+    const pos=byId('gauge-positions').value.split(',').map(x=>parseFloat(x.trim()));
+    const colors=['#667eea','#f093fb','#4facfe'];
+    const labels=[`Gauge 1 (x=${pos[0]}m)`,`Gauge 2 (x=${pos[1]}m)`,`Gauge 3 (x=${pos[2]}m)`];
+    const traces=[0,1,2].map(i=>({
+      x: time,
+      y: currentReflectionData.map(r=>r[i]),
+      mode: 'lines',
+      name: labels[i],
+      line: {color: colors[i], width: 2}
+    }));
+    Plotly.newPlot('reflection-plot', traces, {
+      title: 'Three-Gauge Time Series Data',
+      xaxis: {title: 'Time t (s)'},
+      yaxis: {title: 'Wave Elevation η (m)'},
+      legend: {orientation: 'h'},
+      margin: {t: 40, l: 60, r: 30, b: 50},
+      autosize: true
+    }, {responsive: true});
+    byId('reflection-chart-title').textContent='Three-Gauge Data Comparison';
+    byId('reflection-plot-container').style.display='block';
+  };
 
   window.plotFrequencySpectrum=function(){ if(!currentReflectionData) return alert('No gauge data'); destroyChart(reflectionChart); const first=currentReflectionData.map(r=>({re:r[0], im:0})); const dt=parseFloat(byId('time-step').value); const fs=1/dt; const fft=FFT.fft(first); const n=fft.length; const freqs=[]; const energy=[]; for (let i=0;i<n/2;i++){ freqs.push(i*fs/n); const mag=FFT.magnitude(fft[i])/n; energy.push((mag*mag)/fs); } const ctx=document.getElementById('reflection-plot').getContext('2d'); reflectionChart=new Chart(ctx,{ type:'line', data:{ labels:freqs, datasets:[{ label:'Energy Spectrum', data:energy, borderColor:'#667eea', backgroundColor:'rgba(102,126,234,0.1)', borderWidth:2, pointRadius:0, tension:0.1, fill:true }]}, options: baseLineChartOptions('Frequency Spectrum Analysis (Gauge 1)','Frequency f (Hz)','Energy Spectrum (m²/Hz)') }); byId('reflection-chart-title').textContent='Wave Frequency Spectrum'; byId('reflection-plot-container').style.display='block'; ensureAxisLabels(reflectionChart,'Frequency f (Hz)','Energy Spectrum (m²/Hz)'); };
+  window.plotFrequencySpectrum=function(){
+    if(!currentReflectionData) return alert('No gauge data');
+    const first=currentReflectionData.map(r=>({re:r[0], im:0}));
+    const dt=parseFloat(byId('time-step').value);
+    const fs=1/dt;
+    const fft=FFT.fft(first);
+    const n=fft.length;
+    const freqs=[];
+    const energy=[];
+    for (let i=0;i<n/2;i++){
+      freqs.push(i*fs/n);
+      const mag=FFT.magnitude(fft[i])/n;
+      energy.push((mag*mag)/fs);
+    }
+    Plotly.newPlot('reflection-plot', [{
+      x: freqs,
+      y: energy,
+      type: 'scatter',
+      mode: 'lines',
+      name: 'Energy Spectrum',
+      line: {color: '#667eea', width: 2},
+      fill: 'tozeroy',
+      fillcolor: 'rgba(102,126,234,0.1)'
+    }], {
+      title: 'Frequency Spectrum Analysis (Gauge 1)',
+      xaxis: {title: 'Frequency f (Hz)'},
+      yaxis: {title: 'Energy Spectrum (m²/Hz)'},
+      margin: {t: 40, l: 60, r: 30, b: 50},
+      autosize: true
+    }, {responsive: true});
+    byId('reflection-chart-title').textContent='Wave Frequency Spectrum';
+    byId('reflection-plot-container').style.display='block';
+  };
 
   // Reset zoom compatibility
   window.resetWaveZoom=function(){ if (waveChart && waveChart.resetZoom) waveChart.resetZoom(); };
