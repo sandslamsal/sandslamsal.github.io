@@ -1,20 +1,24 @@
 ---
 layout: page
 permalink: /apps/wave/
-title: Wave - Wave Analysis Calculator
-description: Advanced wave analysis calculator for coastal and marine engineering calculations.
+title: Wave Analysis
+description: Advanced wave analysis calculator redirecting to external app
 nav: false
-redirect_to: https://sandeshlamsal.com/WaveApp/
 ---
 
 <script>
-// Backup redirect in case Jekyll redirect plugin is not available
-window.location.replace("https://sandeshlamsal.com/WaveApp/");
+  // Immediate redirect to external Wave App
+  window.location.href = "https://sandeshlamsal.com/WaveApp/";
 </script>
 
-<div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+<noscript>
+  <meta http-equiv="refresh" content="0; url=https://sandeshlamsal.com/WaveApp/">
+  <p>Redirecting to Wave App... <a href="https://sandeshlamsal.com/WaveApp/">Click here if you are not redirected automatically</a></p>
+</noscript>
+
+<div style="text-align: center; margin-top: 50px;">
   <h2>Redirecting to Wave App...</h2>
-  <p>You are being redirected to the Wave Analysis Calculator.</p>
+  <p>You are being redirected to the Wave Analysis application.</p>
   <p>If you are not redirected automatically, <a href="https://sandeshlamsal.com/WaveApp/">click here</a>.</p>
 </div>
 

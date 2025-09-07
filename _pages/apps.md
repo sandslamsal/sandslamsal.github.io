@@ -333,8 +333,8 @@ nav_order: 6
       </div>
     </a>
 
-    <!-- Column Design App (Coming Soon) -->
-    <div class="app-card" style="cursor: not-allowed; opacity: 0.7;">
+    <!-- Column Design App (In Development) -->
+    <div class="app-card" style="cursor: not-allowed; opacity: 0.85;">
       <div class="app-icon hydro">
         <i class="fa-solid fa-columns"></i>
       </div>
@@ -343,13 +343,13 @@ nav_order: 6
         Advanced column design calculations for reinforced concrete columns. Load analysis, slenderness checks, and capacity design.
       </p>
       <div class="app-badges">
-        <span class="app-badge coming-soon">Coming Soon</span>
+        <span class="app-badge in-development">In Development</span>
         <span class="app-badge python">Python</span>
         <span class="app-badge interactive">Interactive</span>
       </div>
       <div class="app-status">
-        <span class="status-indicator coming-soon"></span>
-        <span>Planned</span>
+        <span class="status-indicator in-development"></span>
+        <span>In Development</span>
       </div>
     </div>
 
