@@ -2,7 +2,7 @@
 layout: page
 permalink: /apps/pilecap/
 title: PileCapDesign - Pile Cap Analysis Tool
-description: Comprehensive pile cap design tool redirecting to external app
+description: Comprehensive pile cap design tool
 nav: false
 ---
 

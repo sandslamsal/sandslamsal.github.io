@@ -333,25 +333,27 @@ nav_order: 6
       </div>
     </a>
 
-    <!-- Column Design App (In Development) -->
-    <div class="app-card" style="cursor: not-allowed; opacity: 0.85;">
-      <div class="app-icon hydro">
-        <i class="fa-solid fa-columns"></i>
+    <!-- Column Design App -->
+    <a href="https://sandeshlamsal.com/ColumnDesignApp/" target="_blank" class="app-card-link">
+      <div class="app-card">
+        <div class="app-icon hydro">
+          <i class="fa-solid fa-columns"></i>
+        </div>
+        <h3 class="app-title">Column Design</h3>
+        <p class="app-description">
+          Advanced column design calculations for reinforced concrete columns. Load analysis, slenderness checks, and capacity design.
+        </p>
+        <div class="app-badges">
+          <span class="app-badge python">Python</span>
+          <span class="app-badge interactive">Interactive</span>
+          <span class="app-badge external">External</span>
+        </div>
+        <div class="app-status">
+          <span class="status-indicator"></span>
+          <span>Available (Beta)</span>
+        </div>
       </div>
-      <h3 class="app-title">Column Design</h3>
-      <p class="app-description">
-        Advanced column design calculations for reinforced concrete columns. Load analysis, slenderness checks, and capacity design.
-      </p>
-      <div class="app-badges">
-        <span class="app-badge in-development">In Development</span>
-        <span class="app-badge python">Python</span>
-        <span class="app-badge interactive">Interactive</span>
-      </div>
-      <div class="app-status">
-        <span class="status-indicator in-development"></span>
-        <span>In Development</span>
-      </div>
-    </div>
+    </a>
 
   </div>
 </div>
