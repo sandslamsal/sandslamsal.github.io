@@ -309,7 +309,7 @@ nav_order: 6
   <div class="apps-grid">
     
     <!-- Wave App -->
-    <a href="https://sandeshlamsal.com/WaveApp/" target="_blank" class="app-card">
+    <a href="https://sandslamsal.github.io/WaveApp/" target="_blank" class="app-card">
       <div class="app-icon wave">
         <i class="fa-solid fa-water"></i>
       </div>
@@ -329,8 +329,9 @@ nav_order: 6
     </a>
 
     <!-- Pile Cap App (External Link) -->
-    <a href="https://sandeshlamsal.com/PileCapApp/" target="_blank" class="app-card">
-      <div class="app-icon structural">
+        <!-- PileCap App -->
+    <a href="https://sandslamsal.github.io/PileCapApp/" target="_blank" class="app-card">
+      <div class="app-icon foundation">
         <i class="fa-solid fa-building"></i>
       </div>
       <h3 class="app-title">PileCap</h3>
@@ -349,7 +350,7 @@ nav_order: 6
     </a>
 
     <!-- Column Design App -->
-    <a href="https://sandeshlamsal.com/ColumnApp/" target="_blank" class="app-card-link">
+    <a href="https://sandslamsal.github.io/ColumnApp/" target="_blank" class="app-card-link">
       <div class="app-card">
         <div class="app-icon hydro">
           <i class="fa-solid fa-columns"></i>
