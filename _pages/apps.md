@@ -313,8 +313,8 @@ nav_order: 6
       </div>
     </a>
 
-    <!-- Pile Cap Design App (Activated) -->
-    <a href="/apps/pilecap/" class="app-card">
+    <!-- Pile Cap Design App (External Link) -->
+    <a href="https://sandeshlamsal.com/PileCapApp/" target="_blank" class="app-card">
       <div class="app-icon structural">
         <i class="fa-solid fa-building"></i>
       </div>
