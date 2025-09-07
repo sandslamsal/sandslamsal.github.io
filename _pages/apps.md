@@ -294,7 +294,7 @@ nav_order: 6
   <div class="apps-grid">
     
     <!-- Wave App -->
-    <a href="/apps/wave/" class="app-card">
+    <a href="https://sandeshlamsal.com/WaveApp/" target="_blank" class="app-card">
       <div class="app-icon wave">
         <i class="fa-solid fa-water"></i>
       </div>
