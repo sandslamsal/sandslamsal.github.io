@@ -96,6 +96,16 @@ nav_order: 6
   margin-top: 40px;
 }
 
+.app-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .app-card {
   background: var(--glass-bg);
   backdrop-filter: blur(20px);
@@ -227,6 +237,11 @@ nav_order: 6
   color: white;
 }
 
+.app-badge.in-development {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+}
+
 .app-badge.coming-soon {
   background: linear-gradient(135deg, #ffecd2, #fcb69f);
   color: #8B4513;
@@ -309,21 +324,21 @@ nav_order: 6
       </div>
       <div class="app-status">
         <span class="status-indicator"></span>
-        <span>Available Now</span>
+        <span>Available</span>
       </div>
     </a>
 
-    <!-- Pile Cap Design App (External Link) -->
+    <!-- Pile Cap App (External Link) -->
     <a href="https://sandeshlamsal.com/PileCapApp/" target="_blank" class="app-card">
       <div class="app-icon structural">
         <i class="fa-solid fa-building"></i>
       </div>
-      <h3 class="app-title">PileCapDesign</h3>
+      <h3 class="app-title">PileCap</h3>
       <p class="app-description">
         Comprehensive pile cap design tool for foundation analysis. Rigid-assumption load distribution to each pile, reinforcement design, and code compliance checking.
       </p>
       <div class="app-badges">
-        <span class="app-badge ready">Beta</span>
+        <span class="app-badge ready">Ready</span>
         <span class="app-badge python">Python</span>
         <span class="app-badge interactive">Interactive</span>
       </div>
@@ -334,23 +349,23 @@ nav_order: 6
     </a>
 
     <!-- Column Design App -->
-    <a href="https://sandeshlamsal.com/ColumnDesignApp/" target="_blank" class="app-card-link">
+    <a href="https://sandeshlamsal.com/ColumnApp/" target="_blank" class="app-card-link">
       <div class="app-card">
         <div class="app-icon hydro">
           <i class="fa-solid fa-columns"></i>
         </div>
-        <h3 class="app-title">Column Design</h3>
+        <h3 class="app-title">Column</h3>
         <p class="app-description">
           Advanced column design calculations for reinforced concrete columns. Load analysis, slenderness checks, and capacity design.
         </p>
         <div class="app-badges">
+          <span class="app-badge in-development">In Development</span>
           <span class="app-badge python">Python</span>
           <span class="app-badge interactive">Interactive</span>
-          <span class="app-badge external">External</span>
         </div>
         <div class="app-status">
-          <span class="status-indicator"></span>
-          <span>Available (Beta)</span>
+          <span class="status-indicator coming-soon"></span>
+          <span>Coming Soon</span>
         </div>
       </div>
     </a>
