@@ -5,6 +5,7 @@ title: bio
 description: Teaching experience, professional background, and educational contributions.
 nav: false
 nav_order: 2
+published: false
 ---
 
 <!-- Inline palette overrides removed; styles now in _sass/_bio.scss -->
