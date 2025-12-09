@@ -23,4 +23,4 @@ Sandesh Lamsal is a Licensed Professional Engineer (PE) in USA, with a Ph.D. in 
 
 Lamsal’s academic journey began with a bachelor’s degree in Civil Engineering from [Tribhuvan University](https://tu.edu.np/) and a Master of Science in Civil Engineering from [Texas Tech University](https://www.ttu.edu/). Before pursuing graduate studies in the U.S., he worked as a Structural Engineer in Nepal, specializing in the design of buildings, bridges, and tensile membrane structures.
 
-With professional and academic experience spanning from bridge design to coastal infrastructure, Lamsal is committed to advancing innovative and sustainable engineering solutions. Beyond his practice, he actively contributes to the engineering community through research publications, technical presentations, and knowledge-sharing initiatives.
+With professional and academic experience spanning from bridge design to coastal infrastructure, Lamsal is committed to advancing innovative and sustainable engineering solutions. Beyond his practice, he actively contributes to the engineering community through research, technical presentations, and knowledge-sharing initiatives.
