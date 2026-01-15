@@ -8,7 +8,7 @@ nav_order: 1
 
 profile:
   align: right
-  image: prof_pic_2025.jpg
+  image: prof_pic_2026.jpg
   image_circular: true # crops the image to make it circular
   # more_info: >
   #   <p>140 NW 87th Ave</p>
